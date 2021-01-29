@@ -1,0 +1,35 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate /home/tom/projects/uart2jtag_uart/intel_models/jtag_uart/jtag_uart.qsys --block-symbol-file --output-directory=/home/tom/projects/uart2jtag_uart/intel_models/jtag_uart/jtag_uart --family="Cyclone 10 LP" --part=10CL025YU256I7G
+Progress: Loading jtag_uart/jtag_uart.qsys
+Progress: Reading input file
+Progress: Adding u_jtag_uart [altera_avalon_jtag_uart 20.1]
+Progress: Parameterizing module u_jtag_uart
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: jtag_uart.u_jtag_uart: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Warning: jtag_uart.u_jtag_uart: Interrupt sender u_jtag_uart.irq is not connected to an interrupt receiver
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate /home/tom/projects/uart2jtag_uart/intel_models/jtag_uart/jtag_uart.qsys --synthesis=VERILOG --output-directory=/home/tom/projects/uart2jtag_uart/intel_models/jtag_uart/jtag_uart/synthesis --family="Cyclone 10 LP" --part=10CL025YU256I7G
+Progress: Loading jtag_uart/jtag_uart.qsys
+Progress: Reading input file
+Progress: Adding u_jtag_uart [altera_avalon_jtag_uart 20.1]
+Progress: Parameterizing module u_jtag_uart
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: jtag_uart.u_jtag_uart: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Warning: jtag_uart.u_jtag_uart: Interrupt sender u_jtag_uart.irq is not connected to an interrupt receiver
+Info: jtag_uart: Generating jtag_uart "jtag_uart" for QUARTUS_SYNTH
+Info: u_jtag_uart: Starting RTL generation for module 'jtag_uart_u_jtag_uart'
+Info: u_jtag_uart:   Generation command is [exec /home/tom/altera/20.1/quartus/linux64/perl/bin/perl -I /home/tom/altera/20.1/quartus/linux64/perl/lib -I /home/tom/altera/20.1/quartus/sopc_builder/bin/europa -I /home/tom/altera/20.1/quartus/sopc_builder/bin -I /home/tom/altera/20.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/tom/altera/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- /home/tom/altera/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=jtag_uart_u_jtag_uart --dir=/tmp/alt8656_5890480270750306939.dir/0002_u_jtag_uart_gen/ --quartus_dir=/home/tom/altera/20.1/quartus --verilog --config=/tmp/alt8656_5890480270750306939.dir/0002_u_jtag_uart_gen//jtag_uart_u_jtag_uart_component_configuration.pl  --do_build_sim=0  ]
+Info: u_jtag_uart: Done RTL generation for module 'jtag_uart_u_jtag_uart'
+Info: u_jtag_uart: "jtag_uart" instantiated altera_avalon_jtag_uart "u_jtag_uart"
+Info: jtag_uart: Done "jtag_uart" with 2 modules, 2 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

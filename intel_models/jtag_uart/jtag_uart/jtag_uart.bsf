@@ -1,0 +1,119 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 320 280)
+	(text "jtag_uart" (rect 135 -1 169 11)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 264 20 276)(font "Arial" ))
+	(port
+		(pt 0 72)
+		(input)
+		(text "avbus_chipselect" (rect 0 0 68 12)(font "Arial" (font_size 8)))
+		(text "avbus_chipselect" (rect 4 61 100 72)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 128 72)(line_width 1))
+	)
+	(port
+		(pt 0 88)
+		(input)
+		(text "avbus_address" (rect 0 0 62 12)(font "Arial" (font_size 8)))
+		(text "avbus_address" (rect 4 77 82 88)(font "Arial" (font_size 8)))
+		(line (pt 0 88)(pt 128 88)(line_width 1))
+	)
+	(port
+		(pt 0 104)
+		(input)
+		(text "avbus_read_n" (rect 0 0 59 12)(font "Arial" (font_size 8)))
+		(text "avbus_read_n" (rect 4 93 76 104)(font "Arial" (font_size 8)))
+		(line (pt 0 104)(pt 128 104)(line_width 1))
+	)
+	(port
+		(pt 0 136)
+		(input)
+		(text "avbus_write_n" (rect 0 0 59 12)(font "Arial" (font_size 8)))
+		(text "avbus_write_n" (rect 4 125 82 136)(font "Arial" (font_size 8)))
+		(line (pt 0 136)(pt 128 136)(line_width 1))
+	)
+	(port
+		(pt 0 152)
+		(input)
+		(text "avbus_writedata[31..0]" (rect 0 0 88 12)(font "Arial" (font_size 8)))
+		(text "avbus_writedata[31..0]" (rect 4 141 136 152)(font "Arial" (font_size 8)))
+		(line (pt 0 152)(pt 128 152)(line_width 3))
+	)
+	(port
+		(pt 0 208)
+		(input)
+		(text "clk_clk" (rect 0 0 27 12)(font "Arial" (font_size 8)))
+		(text "clk_clk" (rect 4 197 46 208)(font "Arial" (font_size 8)))
+		(line (pt 0 208)(pt 128 208)(line_width 1))
+	)
+	(port
+		(pt 0 248)
+		(input)
+		(text "reset_reset_n" (rect 0 0 56 12)(font "Arial" (font_size 8)))
+		(text "reset_reset_n" (rect 4 237 82 248)(font "Arial" (font_size 8)))
+		(line (pt 0 248)(pt 128 248)(line_width 1))
+	)
+	(port
+		(pt 0 120)
+		(output)
+		(text "avbus_readdata[31..0]" (rect 0 0 88 12)(font "Arial" (font_size 8)))
+		(text "avbus_readdata[31..0]" (rect 4 109 130 120)(font "Arial" (font_size 8)))
+		(line (pt 0 120)(pt 128 120)(line_width 3))
+	)
+	(port
+		(pt 0 168)
+		(output)
+		(text "avbus_waitrequest" (rect 0 0 74 12)(font "Arial" (font_size 8)))
+		(text "avbus_waitrequest" (rect 4 157 106 168)(font "Arial" (font_size 8)))
+		(line (pt 0 168)(pt 128 168)(line_width 1))
+	)
+	(drawing
+		(text "avbus" (rect 95 43 220 99)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "chipselect" (rect 133 67 326 144)(font "Arial" (color 0 0 0)))
+		(text "address" (rect 133 83 308 176)(font "Arial" (color 0 0 0)))
+		(text "read_n" (rect 133 99 302 208)(font "Arial" (color 0 0 0)))
+		(text "readdata" (rect 133 115 314 240)(font "Arial" (color 0 0 0)))
+		(text "write_n" (rect 133 131 308 272)(font "Arial" (color 0 0 0)))
+		(text "writedata" (rect 133 147 320 304)(font "Arial" (color 0 0 0)))
+		(text "waitrequest" (rect 133 163 332 336)(font "Arial" (color 0 0 0)))
+		(text "clk" (rect 113 179 244 371)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 133 203 284 416)(font "Arial" (color 0 0 0)))
+		(text "reset" (rect 99 219 228 451)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "reset_n" (rect 133 243 308 496)(font "Arial" (color 0 0 0)))
+		(text " jtag_uart " (rect 279 264 624 538)(font "Arial" ))
+		(line (pt 128 32)(pt 192 32)(line_width 1))
+		(line (pt 192 32)(pt 192 264)(line_width 1))
+		(line (pt 128 264)(pt 192 264)(line_width 1))
+		(line (pt 128 32)(pt 128 264)(line_width 1))
+		(line (pt 129 52)(pt 129 172)(line_width 1))
+		(line (pt 130 52)(pt 130 172)(line_width 1))
+		(line (pt 129 188)(pt 129 212)(line_width 1))
+		(line (pt 130 188)(pt 130 212)(line_width 1))
+		(line (pt 129 228)(pt 129 252)(line_width 1))
+		(line (pt 130 228)(pt 130 252)(line_width 1))
+		(line (pt 0 0)(pt 320 0)(line_width 1))
+		(line (pt 320 0)(pt 320 280)(line_width 1))
+		(line (pt 0 280)(pt 320 280)(line_width 1))
+		(line (pt 0 0)(pt 0 280)(line_width 1))
+	)
+)

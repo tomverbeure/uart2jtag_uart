@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable filter="All Interfaces" showClockDomains="1" showResetDomains="0">
+  <columns>
+   <connections preferredWidth="30" />
+   <irq preferredWidth="34" />
+   <name preferredWidth="221" />
+  </columns>
+ </systemtable>
+ <library expandedCategories="Project,Library" />
+ <window width="1668" height="1155" x="652" y="130" />
+ <generation synthesis="VERILOG" />
+</preferences>

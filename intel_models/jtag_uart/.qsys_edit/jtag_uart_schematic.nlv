@@ -1,0 +1,9 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst jtag_uart -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst jtag_uart.u_jtag_uart -pg 1 -lvl 1 -y 30
+preplace netloc EXPORT<net_container>jtag_uart</net_container>(SLAVE)u_jtag_uart.clk,(SLAVE)jtag_uart.clk) 1 0 1 NJ
+preplace netloc EXPORT<net_container>jtag_uart</net_container>(SLAVE)jtag_uart.avbus,(SLAVE)u_jtag_uart.avalon_jtag_slave) 1 0 1 NJ
+preplace netloc EXPORT<net_container>jtag_uart</net_container>(SLAVE)jtag_uart.reset,(SLAVE)u_jtag_uart.reset) 1 0 1 NJ
+levelinfo -pg 1 0 50 240
+levelinfo -hier jtag_uart 60 90 230
